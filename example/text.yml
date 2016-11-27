@@ -1,0 +1,9 @@
+vi:
+  welcome:
+    - Xin chào %s!
+    - Hi %s
+en:
+  welcome:
+    - Hello %s!
+    - Welcome %s!
+    - Hi %s
