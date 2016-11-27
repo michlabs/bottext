@@ -18,21 +18,21 @@ func init() {
 }
 
 // Load reads content from a translation file (in YAML format) and returns any error occurs when reading it.
-// Sample of the translation file: text.yml
-// vi:
-//   welcome:
-//     - Xin chào %s!
-//     - Chào %s
-// 	 goodbye:
-//     - Tạm biệt!
-// en:
-//   welcome:
-//     - Hello %s!
-//     - Welcome %s!
-//     - Hi %s
-//   goodbye:
-//     - Bye!
-//     - GoodBye!
+// Sample of a translation file (text.yml):
+//   vi:
+//     welcome:
+//       - Xin chào %s!
+//       - Chào %s
+// 	   goodbye:
+//       - Tạm biệt!
+//   en:
+//     welcome:
+//       - Hello %s!
+//       - Welcome %s!
+//       - Hi %s
+//     goodbye:
+//       - Bye!
+//       - GoodBye!
 func Load(file string) error {
 	f, err := ioutil.ReadFile(file)
 	if err != nil {
