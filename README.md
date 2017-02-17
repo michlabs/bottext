@@ -33,7 +33,8 @@ import (
 
 func main() {
     bottext.MustLoad("text.yml")
-    T1 := bottext.New("en")
+    var T1 bottext.BotTextFunc
+    T1 = bottext.New("en")
     for i := 0; i < 10; i ++ {
         fmt.Printf(T1("welcome") + "\n", "Donald Trump")    
     }
